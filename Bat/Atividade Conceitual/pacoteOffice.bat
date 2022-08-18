@@ -41,5 +41,5 @@ start powerpnt.exe
 goto:inicio
 
 :dados
-start access.exe
+start msaccess.exe
 goto:inicio
