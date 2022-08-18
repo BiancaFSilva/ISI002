@@ -27,4 +27,4 @@ if /i %op% == x (call menu.bat)
 shutdown
 
 :reinicia
-rem shutdown -r
+shutdown -r
