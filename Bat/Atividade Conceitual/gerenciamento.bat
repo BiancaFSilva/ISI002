@@ -24,7 +24,7 @@ if %op% == 2 (goto:reinicia)
 if /i %op% == x (call menu.bat)
 
 :desliga
-shutdown
+shutdown -s
 
 :reinicia
 shutdown -r
