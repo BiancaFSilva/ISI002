@@ -1,0 +1,14 @@
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\bin\Debug\Projeto_SI2022.exe.config
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\bin\Debug\Projeto_SI2022.exe
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\bin\Debug\Projeto_SI2022.pdb
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\bin\Debug\Projeto_SI2022.xml
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.vbproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.Form1.resources
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.frm_clientes.resources
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.Resources.resources
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.vbproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.vbproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.exe
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.xml
+C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_SI2022\obj\Debug\Projeto_SI2022.pdb
