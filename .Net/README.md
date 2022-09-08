@@ -1,1 +1,0 @@
-Comentários são feitos com '
