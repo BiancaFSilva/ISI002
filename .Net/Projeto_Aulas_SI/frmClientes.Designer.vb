@@ -24,8 +24,8 @@ Partial Class frmClientes
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmClientes))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.btnGravar = New System.Windows.Forms.ToolStripButton()
+        Me.btnConsultar = New System.Windows.Forms.ToolStripButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.txtDataNascimento = New System.Windows.Forms.DateTimePicker()
@@ -63,7 +63,7 @@ Partial Class frmClientes
         'ToolStrip1
         '
         Me.ToolStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnGravar, Me.btnConsultar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(12, 8, 12, 8)
@@ -71,27 +71,27 @@ Partial Class frmClientes
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'ToolStripButton1
+        'btnGravar
         '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
-        Me.ToolStripButton1.Size = New System.Drawing.Size(40, 20)
-        Me.ToolStripButton1.Text = "ToolStripButton1"
-        Me.ToolStripButton1.ToolTipText = "Salvar"
+        Me.btnGravar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btnGravar.Image = CType(resources.GetObject("btnGravar.Image"), System.Drawing.Image)
+        Me.btnGravar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnGravar.Name = "btnGravar"
+        Me.btnGravar.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
+        Me.btnGravar.Size = New System.Drawing.Size(40, 20)
+        Me.btnGravar.Text = "ToolStripButton1"
+        Me.btnGravar.ToolTipText = "Salvar"
         '
-        'ToolStripButton2
+        'btnConsultar
         '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
-        Me.ToolStripButton2.Size = New System.Drawing.Size(40, 20)
-        Me.ToolStripButton2.Text = "ToolStripButton2"
-        Me.ToolStripButton2.ToolTipText = "Consultar"
+        Me.btnConsultar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btnConsultar.Image = CType(resources.GetObject("btnConsultar.Image"), System.Drawing.Image)
+        Me.btnConsultar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnConsultar.Name = "btnConsultar"
+        Me.btnConsultar.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
+        Me.btnConsultar.Size = New System.Drawing.Size(40, 20)
+        Me.btnConsultar.Text = "ToolStripButton2"
+        Me.btnConsultar.ToolTipText = "Consultar"
         '
         'TabControl1
         '
@@ -166,7 +166,7 @@ Partial Class frmClientes
         'txtFone
         '
         Me.txtFone.Location = New System.Drawing.Point(29, 282)
-        Me.txtFone.Mask = "+55 (11) \99999-9999"
+        Me.txtFone.Mask = "(11) \99999-9999"
         Me.txtFone.Name = "txtFone"
         Me.txtFone.Size = New System.Drawing.Size(163, 20)
         Me.txtFone.TabIndex = 9
@@ -363,8 +363,8 @@ Partial Class frmClientes
     End Sub
 
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton1 As ToolStripButton
-    Friend WithEvents ToolStripButton2 As ToolStripButton
+    Friend WithEvents btnGravar As ToolStripButton
+    Friend WithEvents btnConsultar As ToolStripButton
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents txtCidade As MaskedTextBox
