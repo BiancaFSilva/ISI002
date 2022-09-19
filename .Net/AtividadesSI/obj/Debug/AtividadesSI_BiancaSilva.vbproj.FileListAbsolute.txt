@@ -1,0 +1,13 @@
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\bin\Debug\AtividadesSI_BiancaSilva.exe.config
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\bin\Debug\AtividadesSI_BiancaSilva.exe
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\bin\Debug\AtividadesSI_BiancaSilva.pdb
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\bin\Debug\AtividadesSI_BiancaSilva.xml
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.vbproj.AssemblyReference.cache
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.vbproj.SuggestedBindingRedirects.cache
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.Form1.resources
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.Resources.resources
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.vbproj.GenerateResource.cache
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.vbproj.CoreCompileInputs.cache
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.exe
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.xml
+C:\Users\wagne\Music\AtividadesSI_BiancaSilva\obj\Debug\AtividadesSI_BiancaSilva.pdb
