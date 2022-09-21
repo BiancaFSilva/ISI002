@@ -24,20 +24,25 @@ Consiste em um sistema aplicável a todo mecanismo projetado com a finalidade de
 
 ### Programação
 - [Batch](#batch)  
-  - [Variáveis](#variáveis)
+  - [Comandos Básicos](#comandos-básicos)
   - [Expressões Lógicas](#expressões-lógicas)
-  - [Estrutura do Arquivo .bat](#estrutura-do-arquivo-bat)
-  - [Códigos](#código)
-    - [Contador](#)
+  - [Códigos](#códigos)
+    - [Contador](#contador)
+    - [Estrutura Condicional](#estrutura-condicional)
     - [Estruturas de Repetição](#estruturas-de-repetição)
-    - [Números randômicos](#)
-  - [Cores da Tela do Programa](#)
-- [VBScript](#vbscript)  
-  - [Variáveis](#variáveis-1)
+    - [Números randômicos](#números-randômicos)
+    - [Gerenciamento de Arquivos](#gerenciamento-de-arquivos)
+  - [Estrutura do Arquivo .bat](#estrutura-do-arquivo-bat)
+- [VBScript](#vbscript)
+  - [Comandos Básicos](#comandos-básicos-1)  
+  - [Variáveis](#variáveis)
   - [Expressões Lógicas](#expressões-lógicas-1)
-  - [Estrutura do Arquivo .vbs](#estrutura-do-arquivo-vbs)
-  - [Códigos](#código-1)
+  - [Códigos](#códigos-1)
+    - [Contador](#contador-1)
+    - [Estrutura Condicional](#estrutura-condicional-1)
     - [Estruturas de Repetição](#estruturas-de-repetição-1)
+  - [Estrutura do Arquivo .vbs](#estrutura-do-arquivo-vbs)
+  
   
 --- 
  
@@ -156,10 +161,27 @@ O sistema cliente-servidor consiste em um modelo de aplicação distribuída, on
 # Batch
 Consiste em uma linguagem de processamento em lote que informa a os comandos a serem executados pelo intérprete da linha de comando, tais comando geralmente são armazenados em um arquivo de texto simples. <br>
 Quase toda tarefa ou ação pode ser executada por uma simples sequência de comandos salvos em um arquivo .bat ou digitados no prompt de comando do Windows. 
-
-## Variáveis 
-
-
+## Comandos Básicos
+| Comando    | Função |
+|------------|--------|
+| @echo off  | oculta o código durante a execução |
+| @echo on   | mostra o código junto à execução   |
+| mode       | define o tamanho da janela         |
+| title      | define o nome da janela            |
+| color      | define a cor de fundo e de texto   |
+| :sub       | inicia uma sub-rotina              |
+| cls        | limpa a tela                       |
+| rem        | cria um comentário                 |
+| echo       | escreve na tela                    |
+| echo.      | pula uma linha                     |
+| set /p     | cria uma variável                  |
+| set /a     | cria uma variável com valores definidos  |
+| if else    | estrutura condicional              |
+| goto       | chama sub-rotina                   |
+| call       | chama um arquivo externo           |
+| start      | inicializa um aplicativo           |
+| pause      | congela a tela                     |
+| exit       | fecha o programa                   |
 ## Expressões Lógicas
 | Nome                      | Símbolo             |
 |---------------------------|:-------------------:|
@@ -171,8 +193,60 @@ Quase toda tarefa ou ação pode ser executada por uma simples sequência de com
 | Maior ou Igual            | GEQ                 |
 | Negação                   | NOT                 |
 | Existe                    | EXIST               |
+## Códigos
+Exemplos de códigos simples
+### Contador
+```batch
+set /a cont= %cont% + 1
+```
+### Estrutura Condicional 
+```batch
+if %var% EQU 1 ( condição ) else ( condição 2 )
+if \i %var% EQU x ( condição ) else ( condição 2 )
+```
+### Estruturas de Repetição
+```batch
+for /l %%var in (inicio, incremento, fim) do (comandos)
+```
+### Números randômicos
+```batch
+set /a num= (%Random% %% maiorNumero) + 1
+```
+### Gerenciamento de Arquivos
+Gerar arquivo
+```batch
+for /l %%n in (1,1,%qtde%) do (echo fatecSCS > %arquivo%%%n.%ext%)
+```
+Mover arquivo
+```batch
+md %pasta% 
+move *.%ext% %endereco%\%pasta%
+```
+Ocultar arquivo
+```batch
+rem h = hidden e r = read
+attrib %pasta% +h +r 
+```
+Exibir arquivo
+```batch
+rem o sinal - serve para desfazer a ocultação
+attrib %pasta% -h -r 
+```
+Excluir arquivo
+```batch
+c: 
+rem chama o diretório
+cd %endereco%
+rem /f exclui arquivos da pasta
+rem /s exclui sem confirmação do sim
+rem /q excluir sem enviar para a lixeira
+del /f /s /q %pasta%
+rem exclui a pasta vazia
+rd %pasta%
+```
 
 ## Estrutura do Arquivo .bat
+A baixo está exemplificado um arquivo desenvolvido com a linguagem batch
 
 ```batch
 @echo off
@@ -210,21 +284,7 @@ color 0f
   start calc.exe
   goto:inicio
 ```
-
-## Código
-Exemplos de códigos simples
-### Contador
-```batch
-set /a cont= %cont% + 1
-```
-### Estruturas de Repetição
-```batch
-for /l %%var in (inicio, incremento, fim) do (comandos)
-```
-### Números randômicos
-```batch
-set /a num= (%Random% %% maiorNumero) + 1
-```
+![Janela do Exemplo](https://user-images.githubusercontent.com/60801421/191622088-f1004801-c666-40cc-a4f1-966f75679e10.png)
 
 [🔝 Voltar ao Menu](#conteúdos-abordados)
 
@@ -232,9 +292,112 @@ set /a num= (%Random% %% maiorNumero) + 1
 
 # VBScript
 Consiste em uma linguagem desenvolvido pela Microsoft criada a partir no Visual Basic, permite controle completo sobre muitos aspectos de ambiente computacional, de forma que o usuário pode gerar ferramentas para gerenciar computadores com manipulação de erros, sub-rotinas e outras construções de programação avançadas.
-## Variáveis 
-## Estrutura do Arquivo .vbs
-## Código
+## Comandos Básicos
+| Comando      | Função |
+|--------------|--------|
+| dim          | declara uma variável         |
+| set          | declara uma variável reservada |
+| call         | chama uma sub-rotina         |
+| sub nomeSub() | inicia uma sub-rotina        |
+| end sub      | fecha uma sub-rotina         |
+| inputBox     | mostra uma caixa de diálogo  |
+| msgBox       | mostra uma caixa de mensagem |
+| round        | arredonda um número          |
+| randomize    | pega um avlor aleatório      |
+| wscript.quit | fecha o programa             |
+## Variáveis
+| Conversão  | Função |
+|------------|--------|
+| cint()     | converte para número inteiro  |
+| cdbl()     | converte para número decimal  |
+| ccur()     | converte para valor monetário |
+| cstr()     | converte para string          |
+| cbool()    | converte para valor booleano  |
+| cdate()    | converte em data              |
+## Expressões Lógicas
+| Nome                      | Símbolo       |
+|---------------------------|:-------------:|
+| Igual                     | =             |
+| Diferente                 | != ou <>      |
+| Menor                     | <             |
+| Menor ou Igual            | <=            |
+| Maior                     | >             |
+| Maior ou Igual            | >=            |
+## Códigos
+Exemplos de códigos simples
+### Contador
+```vbs
+dim n = 0
+n = n + 1
+```
+### Estrutura Condicional 
+```vbs
+if (condiço) then
+  ' Código  
+elseif (condiço 2) then
+  ' Código  
+else 
+  ' Código  
+end if
+```
 ### Estruturas de Repetição
+Do While
+```vbs
+do while n <= 5
+  n += 1       
+loop
+```
+For
+```vbs
+for n=1 to 5 step 1
+  ' Código  
+next
+```
+
+## Estrutura do Arquivo .vbs
+A baixo está exemplificado um arquivo desenvolvido com a linguagem vbscript
+
+```vbs
+dim a, b, c, media
+dim resp, situacao
+call calculaMedia
+
+sub calculaMedia()  
+    ' Conversão e definição das variáveis
+    a = cdbl(inputbox("Informe a primeira nota: ", "AVISO"))
+    b = cdbl(inputbox("Informe a segunda nota: ", "AVISO"))
+    c = cdbl(inputbox("Informe a terceira nota: ", "AVISO"))
+
+    ' Configura média aritmética
+    media = round((a + b + c)/3, 1) 
+
+    ' Condição
+    if media < 4 then
+        situacao = "Reprovado"
+    elseif media >= 4 and media < 6 then
+        situacao = "Recuperacao"
+    else
+        situacao = "Aprovado"
+    end if
+
+    ' Saída de dados: mensagem, tipo de ícone, tipo de botão, título
+    msgbox("Media do aluno: " & media & ". " + vbNewLine &_
+           "Situacao: " & situacao & ". "), vbquestion + vbokonly, "RENDIMENTO"
+
+    call novoCalculo
+end sub
+
+sub novoCalculo()
+    resp = msgbox("Deseja realizar um novo calculo?", vbquestion + vbyesno, "ATENCAO")
+    if resp = vbyes then
+        call calculaMedia() 
+    else 
+        wscript.quit    ' Encerra 
+    end if
+end sub
+```
+![Entrada de dados](https://user-images.githubusercontent.com/60801421/191627430-1474766f-5984-49d7-ad09-aaab91323bd1.png)
+![Resultado](https://user-images.githubusercontent.com/60801421/191627632-04099587-fe6b-4cb1-afad-aa483f39e8d2.png)
+![Reicinia processo](https://user-images.githubusercontent.com/60801421/191627562-d112b713-7d3c-40e5-8128-031ddcd53e85.png)
 
 [🔝 Voltar ao Menu](#conteúdos-abordados)
