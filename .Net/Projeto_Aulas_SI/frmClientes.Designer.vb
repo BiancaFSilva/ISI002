@@ -25,9 +25,9 @@ Partial Class frmClientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmClientes))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.btnGravar = New System.Windows.Forms.ToolStripButton()
-        Me.btnConsultar = New System.Windows.Forms.ToolStripButton()
+        Me.btnConsulta = New System.Windows.Forms.ToolStripButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.tabDadosCliente = New System.Windows.Forms.TabPage()
         Me.txtDataNascimento = New System.Windows.Forms.DateTimePicker()
         Me.txtEmail = New System.Windows.Forms.MaskedTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -49,21 +49,21 @@ Partial Class frmClientes
         Me.txtCpf = New System.Windows.Forms.MaskedTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.imgUser = New System.Windows.Forms.PictureBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.tabListaCadastro = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
+        Me.tabDadosCliente.SuspendLayout()
         CType(Me.imgUser, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
+        Me.tabListaCadastro.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
         Me.ToolStrip1.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnGravar, Me.btnConsultar})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnGravar, Me.btnConsulta})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(12, 8, 12, 8)
@@ -82,22 +82,22 @@ Partial Class frmClientes
         Me.btnGravar.Text = "ToolStripButton1"
         Me.btnGravar.ToolTipText = "Salvar"
         '
-        'btnConsultar
+        'btnConsulta
         '
-        Me.btnConsultar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btnConsultar.Image = CType(resources.GetObject("btnConsultar.Image"), System.Drawing.Image)
-        Me.btnConsultar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
-        Me.btnConsultar.Size = New System.Drawing.Size(40, 20)
-        Me.btnConsultar.Text = "ToolStripButton2"
-        Me.btnConsultar.ToolTipText = "Consultar"
+        Me.btnConsulta.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btnConsulta.Image = CType(resources.GetObject("btnConsulta.Image"), System.Drawing.Image)
+        Me.btnConsulta.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnConsulta.Name = "btnConsulta"
+        Me.btnConsulta.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
+        Me.btnConsulta.Size = New System.Drawing.Size(40, 20)
+        Me.btnConsulta.Text = "ToolStripButton2"
+        Me.btnConsulta.ToolTipText = "Consultar"
         '
         'TabControl1
         '
         Me.TabControl1.AccessibleName = "Listagem de Cadastros"
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.tabDadosCliente)
+        Me.TabControl1.Controls.Add(Me.tabListaCadastro)
         Me.TabControl1.Location = New System.Drawing.Point(0, 42)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -105,36 +105,36 @@ Partial Class frmClientes
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.Tag = ""
         '
-        'TabPage1
+        'tabDadosCliente
         '
-        Me.TabPage1.Controls.Add(Me.txtDataNascimento)
-        Me.TabPage1.Controls.Add(Me.txtEmail)
-        Me.TabPage1.Controls.Add(Me.Label9)
-        Me.TabPage1.Controls.Add(Me.txtFone)
-        Me.TabPage1.Controls.Add(Me.Label10)
-        Me.TabPage1.Controls.Add(Me.txtUf)
-        Me.TabPage1.Controls.Add(Me.Label8)
-        Me.TabPage1.Controls.Add(Me.txtCidade)
-        Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.txtBairro)
-        Me.TabPage1.Controls.Add(Me.Label7)
-        Me.TabPage1.Controls.Add(Me.txtEndereco)
-        Me.TabPage1.Controls.Add(Me.Label4)
-        Me.TabPage1.Controls.Add(Me.txtCep)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.txtNome)
-        Me.TabPage1.Controls.Add(Me.Label3)
-        Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Controls.Add(Me.txtCpf)
-        Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Controls.Add(Me.imgUser)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(581, 346)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Dados do Cliente"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.tabDadosCliente.Controls.Add(Me.txtDataNascimento)
+        Me.tabDadosCliente.Controls.Add(Me.txtEmail)
+        Me.tabDadosCliente.Controls.Add(Me.Label9)
+        Me.tabDadosCliente.Controls.Add(Me.txtFone)
+        Me.tabDadosCliente.Controls.Add(Me.Label10)
+        Me.tabDadosCliente.Controls.Add(Me.txtUf)
+        Me.tabDadosCliente.Controls.Add(Me.Label8)
+        Me.tabDadosCliente.Controls.Add(Me.txtCidade)
+        Me.tabDadosCliente.Controls.Add(Me.Label6)
+        Me.tabDadosCliente.Controls.Add(Me.txtBairro)
+        Me.tabDadosCliente.Controls.Add(Me.Label7)
+        Me.tabDadosCliente.Controls.Add(Me.txtEndereco)
+        Me.tabDadosCliente.Controls.Add(Me.Label4)
+        Me.tabDadosCliente.Controls.Add(Me.txtCep)
+        Me.tabDadosCliente.Controls.Add(Me.Label5)
+        Me.tabDadosCliente.Controls.Add(Me.txtNome)
+        Me.tabDadosCliente.Controls.Add(Me.Label3)
+        Me.tabDadosCliente.Controls.Add(Me.Label2)
+        Me.tabDadosCliente.Controls.Add(Me.txtCpf)
+        Me.tabDadosCliente.Controls.Add(Me.Label1)
+        Me.tabDadosCliente.Controls.Add(Me.imgUser)
+        Me.tabDadosCliente.Location = New System.Drawing.Point(4, 22)
+        Me.tabDadosCliente.Name = "tabDadosCliente"
+        Me.tabDadosCliente.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabDadosCliente.Size = New System.Drawing.Size(581, 346)
+        Me.tabDadosCliente.TabIndex = 0
+        Me.tabDadosCliente.Text = "Dados do Cliente"
+        Me.tabDadosCliente.UseVisualStyleBackColor = True
         '
         'txtDataNascimento
         '
@@ -315,16 +315,16 @@ Partial Class frmClientes
         Me.imgUser.TabIndex = 0
         Me.imgUser.TabStop = False
         '
-        'TabPage2
+        'tabListaCadastro
         '
-        Me.TabPage2.Controls.Add(Me.DataGridView1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(581, 346)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Listagem de Cadastros"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.tabListaCadastro.Controls.Add(Me.DataGridView1)
+        Me.tabListaCadastro.Location = New System.Drawing.Point(4, 22)
+        Me.tabListaCadastro.Name = "tabListaCadastro"
+        Me.tabListaCadastro.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabListaCadastro.Size = New System.Drawing.Size(581, 346)
+        Me.tabListaCadastro.TabIndex = 1
+        Me.tabListaCadastro.Text = "Listagem de Cadastros"
+        Me.tabListaCadastro.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -352,10 +352,10 @@ Partial Class frmClientes
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
+        Me.tabDadosCliente.ResumeLayout(False)
+        Me.tabDadosCliente.PerformLayout()
         CType(Me.imgUser, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage2.ResumeLayout(False)
+        Me.tabListaCadastro.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -364,9 +364,9 @@ Partial Class frmClientes
 
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents btnGravar As ToolStripButton
-    Friend WithEvents btnConsultar As ToolStripButton
+    Friend WithEvents btnConsulta As ToolStripButton
     Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents tabDadosCliente As TabPage
     Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents txtBairro As MaskedTextBox
@@ -381,7 +381,7 @@ Partial Class frmClientes
     Friend WithEvents txtCpf As MaskedTextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents imgUser As PictureBox
-    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents tabListaCadastro As TabPage
     Friend WithEvents txtDataNascimento As DateTimePicker
     Friend WithEvents txtEmail As MaskedTextBox
     Friend WithEvents Label9 As Label

@@ -16,4 +16,8 @@
             MsgBox("Ocorreu um erro durante o processamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
+    Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
+        Application.Exit()
+    End Sub
 End Class

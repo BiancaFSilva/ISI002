@@ -62,7 +62,7 @@ Partial Class FormMenu
         Me.UsuáriosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.FornecedoresToolStripMenuItem})
         Me.UsuáriosToolStripMenuItem.Image = CType(resources.GetObject("UsuáriosToolStripMenuItem.Image"), System.Drawing.Image)
         Me.UsuáriosToolStripMenuItem.Name = "UsuáriosToolStripMenuItem"
-        Me.UsuáriosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UsuáriosToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.UsuáriosToolStripMenuItem.Text = "Usuários"
         '
         'ClientesToolStripMenuItem
@@ -82,19 +82,19 @@ Partial Class FormMenu
         '
         Me.ContasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarContasToolStripMenuItem, Me.GerenciarContasToolStripMenuItem})
         Me.ContasToolStripMenuItem.Name = "ContasToolStripMenuItem"
-        Me.ContasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ContasToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ContasToolStripMenuItem.Text = "Contas"
         '
         'CadastrarContasToolStripMenuItem
         '
         Me.CadastrarContasToolStripMenuItem.Name = "CadastrarContasToolStripMenuItem"
-        Me.CadastrarContasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CadastrarContasToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.CadastrarContasToolStripMenuItem.Text = "Cadastrar Contas"
         '
         'GerenciarContasToolStripMenuItem
         '
         Me.GerenciarContasToolStripMenuItem.Name = "GerenciarContasToolStripMenuItem"
-        Me.GerenciarContasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GerenciarContasToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.GerenciarContasToolStripMenuItem.Text = "Gerenciar Contas"
         '
         'AplicativosToolStripMenuItem

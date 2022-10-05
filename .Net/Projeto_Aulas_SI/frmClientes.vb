@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub frmClientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call conectaBanco()
+        Call conectaDatabase()
     End Sub
 
     Private Sub btnGravar_Click(sender As Object, e As EventArgs) Handles btnGravar.Click
@@ -24,10 +24,10 @@
             rs = db.Execute(sql)
 
             If rs.EOF = False Then
-                MsgBox("CPF já cadastrado!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                MsgBox("O CPF informado já está cadastrado!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "ATENÇÃO")
                 Exit Sub
             Else
-                sql = "INSERT INTO tb_cadastro VALUES ('" & txtCep.Text & "', " &
+                sql = "INSERT INTO tb_cadastro VALUES ('" & txtCpf.Text & "', " &
                       "'" & txtDataNascimento.Value & "', " &
                       "'" & txtNome.Text & "', " &
                       "'" & txtCep.Text & "', " &
@@ -42,7 +42,6 @@
 
                 MsgBox("Cadastro realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
 
-                ' Limpa os valores dos campos
                 txtCpf.Clear()
                 txtDataNascimento.Value = Now
                 txtNome.Clear()
@@ -58,7 +57,16 @@
                 txtCpf.Focus()
             End If
         Catch ex As Exception
+            MsgBox("Ocorreu um erro e não foi possível cadastrar os dados", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
 
+    Private Sub btnConsulta_Click(sender As Object, e As EventArgs) Handles btnConsulta.Click
+        Try
+            sql = "SELECT * FROM tb_cadastro"
+            rs = db.Execute(sql)
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro e não foi possível consultar as informações desejadas", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
 End Class
