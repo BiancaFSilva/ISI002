@@ -21,3 +21,19 @@ C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_Aulas_SI\obj
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.exe
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.xml
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.pdb
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\bin\Debug\Projeto_Aulas_SI.exe.config
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\bin\Debug\Projeto_Aulas_SI.exe
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\bin\Debug\Projeto_Aulas_SI.pdb
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\bin\Debug\Projeto_Aulas_SI.xml
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.vbproj.AssemblyReference.cache
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Interop.ADODB.dll
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.vbproj.ResolveComReference.cache
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.FormMenu.resources
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.frmClientes.resources
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.Resources.resources
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.vbproj.GenerateResource.cache
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.vbproj.CoreCompileInputs.cache
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.exe
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.xml
+C:\Users\Aluno\Source\Repos\BiancaFSilva\ISI002\.Net\Projeto_Aulas_SI\obj\Debug\Projeto_Aulas_SI.pdb

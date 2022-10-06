@@ -93,4 +93,65 @@
             MsgBox("Ocorreu um erro durante a pesquisa", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
+    Private Sub txtCep_LostFocus(sender As Object, e As EventArgs) Handles txtCep.LostFocus
+        Try
+            sql = "SELECT * FROM tb_cep WHERE cep = '" & txtCep.Text & "'"
+            rs = db.Execute(sql)
+
+            If rs.EOF = False Then
+                txtEndereco.Text = rs.Fields(1).Value
+                txtBairro.Text = rs.Fields(3).Value
+                txtCidade.Text = rs.Fields(2).Value
+                txtUf.Text = rs.Fields(4).Value
+            Else
+                MsgBox("CEP não localizado", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            End If
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante a pesquisa", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Private Sub dgvDados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDados.CellContentClick
+        Try
+            With dgvDados
+                If .CurrentRow.Cells(3).Selected = True Then
+                    auxCpf = .CurrentRow.Cells(1).Value
+
+                    sql = "SELECT * FROM tb_cadastro WHERE cpf '" & auxCpf & "'"
+                    rs = db.Execute(sql)
+
+                    If rs.EOF = False Then
+                        TabControl1.SelectTab(0)
+
+                        txtCpf.Text = rs.Fields(0).Value
+                        txtDataNascimento.Value = rs.Fields(1).Value
+                        txtNome.Text = rs.Fields(2).Value
+                        txtCep.Text = rs.Fields(3).Value
+                        txtEndereco.Text = rs.Fields(4).Value
+                        txtBairro.Text = rs.Fields(5).Value
+                        txtCidade.Text = rs.Fields(6).Value
+                        txtUf.Text = rs.Fields(7).Value
+                        txtFone.Text = rs.Fields(8).Value
+                        txtEmail.Text = rs.Fields(9).Value
+                        imgUser.Load(rs.Fields(10).Value)
+                    End If
+                ElseIf .CurrentRow.Cells(4).Selected = True Then
+                    auxCpf = .CurrentRow.Cells(1).Value
+
+                    resp = MsgBox("Deseja realmente exvluit os dados referentes ao CPF " & txtCpf.Text & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = vbYes Then
+                        sql = "DELETE * FROM tb_cadastro WHERE cpf '" & auxCpf & "'"
+                        rs = db.Execute(sql)
+
+                        carregaDados()
+                    End If
+                Else
+                    Exit Sub
+                End If
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
 End Class

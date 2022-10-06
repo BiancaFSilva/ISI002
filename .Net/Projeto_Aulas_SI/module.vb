@@ -6,7 +6,7 @@
     Public sql As String
 
     ' Outras Variáveis 
-    Public dir As String
+    Public dir, resp, auxCpf As String
     Public cont As Integer
 
     Sub conectaDatabase()
