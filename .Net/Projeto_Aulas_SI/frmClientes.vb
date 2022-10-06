@@ -16,6 +16,8 @@
 
     Private Sub frmClientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDatabase()
+        Call carregaDados()
+        Call carregaTipo()
     End Sub
 
     Private Sub btnGravar_Click(sender As Object, e As EventArgs) Handles btnGravar.Click
@@ -40,6 +42,7 @@
                       "'" & dir & "')"
                 rs = db.Execute(sql)
 
+                carregaDados()
                 MsgBox("Cadastro realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
 
                 txtCpf.Clear()
@@ -67,6 +70,27 @@
             rs = db.Execute(sql)
         Catch ex As Exception
             MsgBox("Ocorreu um erro e não foi possível consultar as informações desejadas", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Private Sub txtBusca_TextChanged(sender As Object, e As EventArgs) Handles txtBusca.TextChanged
+        Try
+            sql = "SELECT * FROM tb_cadastro WHERE " & cmbTipo.Text & " LIKE '" & txtBusca.Text & "% '"
+            rs = db.Execute(sql)
+
+            cont = 1
+            With dgvDados
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(cont, rs.Fields(0).Value, rs.Fields(3).Value, Nothing, Nothing)
+                    rs.MoveNext()
+
+                    cont = cont + 1
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante a pesquisa", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
 End Class

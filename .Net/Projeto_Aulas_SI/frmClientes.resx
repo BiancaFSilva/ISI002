@@ -216,6 +216,44 @@
         gg==
 </value>
   </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        rwAAAK8BK7AVuQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF7SURBVEhLpZW/
+        LgVBFMaXQkJFQdDyFB6AhIjEi0gUJBKlhDfgYYREIxIK4k+EQoEeDQ2/b7Jz7jHZ3buz90t+2XPO3fnO
+        7OzcncJpDU7hC35bcAFDEDUOh/ACd7ABwxC0D1UmTfgGU3AD6T2bEGau5Bu2YBZy5M11nYf1Mn+EsCxK
+        tpVkKjVXLs2Bau9KPstkRkmG6sx9/UgFBSJHbcx1nYDsBpNwDRpzD9Mg1dWzGmSbS20bdDKX2jToYq7/
+        ybmCfg26ztx8LahQV3PJfC1INIi5ZL4WOI3BFajetM9jvUrma4HTLqj2BF3MJfO1wOkBVFsOWb35CBzA
+        G0SflF7g9AOqyWgFnss8nXm/z7y+0JZ4+Zsil5Auyyvot4WQ9bQIqt8qiQZeZ6CaZqDTaQdGIVXVWO0y
+        nQOqa5x9rnMPGilt4N+VnjhM6qQsdDlwfANv/u9drYKKWg41yXmS2GAJ4rKkGyFoD+LNg1C1EUzajsfw
+        AVWD62jYCEXxB5g4+sx+cfFyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        rwAAAK8BK7AVuQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADMSURBVEhLtZbB
+        DoIwEESrn47xrhc96T+q3HWGMAmSpex2YZK5bNL3gEJKQc5oj17QIwfJkHFFyTxx8EG/Yx9oRsK1ZIj3
+        QgebBhnJHM7yqZQDehsH6hONSMi4o1PG34VmJKtwpUXihisRSRiueCTNcKUmScMVLuDCOciaheGKdSfT
+        puDKkmQTOGM9c9b7nVSzBFdTEi60NtSahSW1V9Hak9Cd1OBKs8QDV8KSCFxxS1rgyqokA1eqkj2PTLL3
+        P/T5a/FGt/xtIQvM0v0ABfi1nof5e+IAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>124, 17</value>
   </metadata>
