@@ -29,7 +29,7 @@ Partial Class frmClientes
         Me.cmbTipo = New System.Windows.Forms.ToolStripComboBox()
         Me.txtBusca = New System.Windows.Forms.ToolStripTextBox()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.tabGerenciaClientes = New System.Windows.Forms.TabControl()
         Me.tabDadosCliente = New System.Windows.Forms.TabPage()
         Me.txtDataNascimento = New System.Windows.Forms.DateTimePicker()
         Me.txtEmail = New System.Windows.Forms.MaskedTextBox()
@@ -61,7 +61,7 @@ Partial Class frmClientes
         Me.Column5 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolStrip1.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
+        Me.tabGerenciaClientes.SuspendLayout()
         Me.tabDadosCliente.SuspendLayout()
         CType(Me.imgUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabListaCadastro.SuspendLayout()
@@ -118,20 +118,21 @@ Partial Class frmClientes
         '
         Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(182, 20)
-        Me.ToolStripLabel1.Text = "Digite um parâmetro de pesquisa"
+        Me.ToolStripLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(188, 20)
+        Me.ToolStripLabel1.Text = "Digite um parâmetro de pesquisa: "
         '
-        'TabControl1
+        'tabGerenciaClientes
         '
-        Me.TabControl1.AccessibleName = "Listagem de Cadastros"
-        Me.TabControl1.Controls.Add(Me.tabDadosCliente)
-        Me.TabControl1.Controls.Add(Me.tabListaCadastro)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 42)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(589, 372)
-        Me.TabControl1.TabIndex = 1
-        Me.TabControl1.Tag = ""
+        Me.tabGerenciaClientes.AccessibleName = "Listagem de Cadastros"
+        Me.tabGerenciaClientes.Controls.Add(Me.tabDadosCliente)
+        Me.tabGerenciaClientes.Controls.Add(Me.tabListaCadastro)
+        Me.tabGerenciaClientes.Location = New System.Drawing.Point(0, 42)
+        Me.tabGerenciaClientes.Name = "tabGerenciaClientes"
+        Me.tabGerenciaClientes.SelectedIndex = 0
+        Me.tabGerenciaClientes.Size = New System.Drawing.Size(589, 372)
+        Me.tabGerenciaClientes.TabIndex = 1
+        Me.tabGerenciaClientes.Tag = ""
         '
         'tabDadosCliente
         '
@@ -356,56 +357,39 @@ Partial Class frmClientes
         '
         'dgvDados
         '
-        Me.dgvDados.AllowUserToAddRows = False
-        Me.dgvDados.AllowUserToDeleteRows = False
-        Me.dgvDados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgvDados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgvDados.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
         Me.dgvDados.Location = New System.Drawing.Point(9, 7)
         Me.dgvDados.Name = "dgvDados"
-        Me.dgvDados.ReadOnly = True
         Me.dgvDados.Size = New System.Drawing.Size(560, 333)
         Me.dgvDados.TabIndex = 0
         '
         'Column1
         '
-        Me.Column1.HeaderText = "Nº"
+        Me.Column1.HeaderText = "N.º"
         Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 44
         '
         'Column2
         '
         Me.Column2.HeaderText = "CPF do Cliente"
         Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 94
         '
         'Column3
         '
-        Me.Column3.HeaderText = "Nome do Cliente"
+        Me.Column3.HeaderText = "Nome"
         Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 101
         '
         'Column4
         '
         Me.Column4.HeaderText = "Editar"
         Me.Column4.Image = CType(resources.GetObject("Column4.Image"), System.Drawing.Image)
-        Me.Column4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
         Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 40
         '
         'Column5
         '
         Me.Column5.HeaderText = "Excluir"
         Me.Column5.Image = CType(resources.GetObject("Column5.Image"), System.Drawing.Image)
         Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 44
         '
         'OpenFileDialog1
         '
@@ -417,14 +401,14 @@ Partial Class frmClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(585, 409)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.tabGerenciaClientes)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "frmClientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gerenciamento de Clientes"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
+        Me.tabGerenciaClientes.ResumeLayout(False)
         Me.tabDadosCliente.ResumeLayout(False)
         Me.tabDadosCliente.PerformLayout()
         CType(Me.imgUser, System.ComponentModel.ISupportInitialize).EndInit()
@@ -438,7 +422,7 @@ Partial Class frmClientes
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents btnGravar As ToolStripButton
     Friend WithEvents btnConsulta As ToolStripButton
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents tabGerenciaClientes As TabControl
     Friend WithEvents tabDadosCliente As TabPage
     Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents Label6 As Label
@@ -464,12 +448,12 @@ Partial Class frmClientes
     Friend WithEvents Label8 As Label
     Friend WithEvents dgvDados As DataGridView
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents cmbTipo As ToolStripComboBox
+    Friend WithEvents ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents txtBusca As ToolStripTextBox
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewImageColumn
     Friend WithEvents Column5 As DataGridViewImageColumn
-    Friend WithEvents cmbTipo As ToolStripComboBox
-    Friend WithEvents txtBusca As ToolStripTextBox
-    Friend WithEvents ToolStripLabel1 As ToolStripLabel
 End Class

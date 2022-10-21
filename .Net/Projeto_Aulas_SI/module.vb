@@ -6,7 +6,7 @@
     Public sql As String
 
     ' Outras Variáveis 
-    Public dir, resp, auxCpf As String
+    Public dir, resp, aux As String
     Public cont As Integer
 
     Sub conectaDatabase()
@@ -34,7 +34,7 @@
                     .Rows.Add(cont, rs.Fields(0).Value, rs.Fields(3).Value, Nothing, Nothing)
                     rs.MoveNext()
 
-                    cont = cont + 1
+                    cont += 1
                 Loop
             End With
         Catch ex As Exception
