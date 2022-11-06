@@ -34,8 +34,10 @@
                 sql = "UPDATE tb_usuarios SET senha = '" & txtSenha.Text & "' WHERE usuario = '" & txtUsuario.Text & "' OR email = '" & txtUsuario.Text & "'"
                 rs = db.Execute(UCase(sql))
 
-                MsgBox("Sua senha foi atualizada com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                frmRecuperaSenha.Close()
+                MsgBox("Sua senha foi atualizada com sucesso!" + vbNewLine &
+                       "Realize o login para recuperar o acesso a sua conta", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                frmLogin.ShowDialog()
+                Close()
             Else
                 MsgBox("Usuário e/ou email inválidos!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 

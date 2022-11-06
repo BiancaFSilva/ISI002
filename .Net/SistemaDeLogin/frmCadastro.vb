@@ -40,8 +40,10 @@
                            "Deseja realizar o login para ter acesso ao sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = vbYes Then
                         frmLogin.ShowDialog()
-                        Application.Exit()
+                        Close()
                     End If
+
+                    Call carregaDadosUsuario()
                 End If
 
                 txtUsuario.Clear()

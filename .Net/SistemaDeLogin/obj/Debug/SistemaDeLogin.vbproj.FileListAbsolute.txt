@@ -17,3 +17,22 @@ C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\SistemaDeLogin\obj\D
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmMenu.resources
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmDashboard.resources
 C:\Users\Aluno\Desktop\ADSMA2 - Sistemas da Informacao\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmRecuperaSenha.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.vbproj.AssemblyReference.cache
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.vbproj.SuggestedBindingRedirects.cache
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\Interop.ADODB.dll
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.vbproj.ResolveComReference.cache
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmCadastro.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmDashboard.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmLogin.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmMenu.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmRecuperaSenha.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.Resources.resources
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.vbproj.GenerateResource.cache
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.vbproj.CoreCompileInputs.cache
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.exe
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.xml
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.pdb
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.exe.config
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.exe
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.pdb
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.xml

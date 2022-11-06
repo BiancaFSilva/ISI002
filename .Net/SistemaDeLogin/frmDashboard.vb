@@ -24,6 +24,7 @@
                         sql = "DELETE * FROM tb_usuarios WHERE usuario '" & aux & "'"
                         rs = db.Execute(sql)
 
+                        MsgBox("Conta excluída com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                         Call carregaDadosUsuario()
                     End If
                 Else

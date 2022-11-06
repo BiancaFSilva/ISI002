@@ -24,7 +24,7 @@
             If txtUsuario.Text = "admin" And txtSenha.Text = "admin" Then
                 frmMenu.ShowDialog()
                 frmMenu.PainelAdministrativoToolStripMenuItem.Visible = True
-                Exit Sub
+                Close()
             End If
 
             sql = "SELECT * FROM tb_usuarios WHERE (usuario = '" & txtUsuario.Text & "' or email = '" & txtUsuario.Text & "') and senha = '" & txtSenha.Text & "'"
@@ -35,8 +35,14 @@
 
                 frmMenu.PainelAdministrativoToolStripMenuItem.Visible = False
                 frmMenu.ShowDialog()
+                Close()
             Else
-                MsgBox("Usuário e/ou senha inválidos!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                MsgBox("Usuário e/ou senha inválidos! Tente novamente ou cadastre-se" = vbNewLine &
+                       "Deseja criar uma conta?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+                If resp = vbYes Then
+                    frmCadastro.ShowDialog()
+                    Close()
+                End If
 
                 txtUsuario.Clear()
                 txtSenha.Clear()
