@@ -42,4 +42,17 @@
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
+    Sub carregaStatus()
+        Try
+            With frmEditaDados.cmbStatus.Items
+                .Add("Ativo")
+                .Add("Bloquado")
+            End With
+
+            frmEditaDados.cmbStatus.SelectedIndex = 0
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
 End Module

@@ -37,8 +37,8 @@
                 frmMenu.ShowDialog()
                 Close()
             Else
-                MsgBox("Usuário e/ou senha inválidos! Tente novamente ou cadastre-se" = vbNewLine &
-                       "Deseja criar uma conta?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+                resp = MsgBox("Usuário e/ou senha inválidos! Tente novamente ou cadastre-se" + vbNewLine &
+                              "Deseja criar uma conta?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
                 If resp = vbYes Then
                     frmCadastro.ShowDialog()
                     Close()

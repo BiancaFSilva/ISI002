@@ -1,6 +1,6 @@
 ﻿Public Class frmMenu
     Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
-        MsgBox("Deseja realmente sair do sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "ATENÇÃO")
+        resp = MsgBox("Deseja realmente sair do sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "ATENÇÃO")
         If resp = vbYes Then
             Application.Exit()
         End If

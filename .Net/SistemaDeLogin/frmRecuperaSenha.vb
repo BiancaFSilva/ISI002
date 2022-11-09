@@ -36,8 +36,8 @@
 
                 MsgBox("Sua senha foi atualizada com sucesso!" + vbNewLine &
                        "Realize o login para recuperar o acesso a sua conta", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                frmLogin.ShowDialog()
                 Close()
+                frmLogin.ShowDialog()
             Else
                 MsgBox("Usuário e/ou email inválidos!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 

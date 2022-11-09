@@ -13,15 +13,20 @@
                     sql = "SELECT * FROM tb_usuarios WHERE usuario '" & aux & "'"
                     rs = db.Execute(sql)
 
-                    If rs.EOF = False Then
-                        ' Valores a serem editados
-                    End If
+                    With frmEditaDados
+                        .txtId = rs.Fields(0).Value
+                        .txtUsuario = rs.Fields(1).Value
+                        .txtEmail = rs.Fields(2).Value
+                        .cmbStatus = rs.Fields(4).Value
+                    End With
+
+                    frmEditaDados.ShowDialog()
                 ElseIf .CurrentRow.Cells(5).Selected = True Then
                     aux = .CurrentRow.Cells(1).Value
 
                     resp = MsgBox("Deseja realmente excluir os dados desse usuário?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = MsgBoxResult.Yes Then
-                        sql = "DELETE * FROM tb_usuarios WHERE usuario '" & aux & "'"
+                        sql = "DELETE * FROM tb_usuarios WHERE usuario = '" & aux & "'"
                         rs = db.Execute(sql)
 
                         MsgBox("Conta excluída com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")

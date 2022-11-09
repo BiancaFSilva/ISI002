@@ -36,3 +36,4 @@ C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\Si
 C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.exe
 C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.pdb
 C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\bin\Debug\SistemaDeLogin.xml
+C:\Users\wagne\Downloads\ISI002-e0ff9ebdbd7e0ef4a5f7b1495d9b0989cbd2c119\.Net\SistemaDeLogin\obj\Debug\SistemaDeLogin.frmEditaDados.resources

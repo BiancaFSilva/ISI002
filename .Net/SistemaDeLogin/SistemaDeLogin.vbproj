@@ -79,6 +79,12 @@
     <Compile Include="frmDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmEditaDados.Designer.vb">
+      <DependentUpon>frmEditaDados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditaDados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditaDados.resx">
+      <DependentUpon>frmEditaDados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>

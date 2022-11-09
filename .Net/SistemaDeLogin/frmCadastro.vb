@@ -36,15 +36,15 @@
                           "'" & txtEmail.Text & "', '" & txtSenha.Text & "', 'Ativo')"
                     rs = db.Execute(UCase(sql))
 
-                    MsgBox("Conta cadastrada com sucesso!" + vbNewLine &
-                           "Deseja realizar o login para ter acesso ao sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    resp = MsgBox("Conta cadastrada com sucesso!" + vbNewLine &
+                                  "Deseja realizar o login para ter acesso ao sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = vbYes Then
-                        frmLogin.ShowDialog()
                         Close()
+                        frmLogin.ShowDialog()
                     End If
-
-                    Call carregaDadosUsuario()
                 End If
+
+                Call carregaDadosUsuario()
 
                 txtUsuario.Clear()
                 txtEmail.Clear()
